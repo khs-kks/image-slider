@@ -74,7 +74,7 @@ function nextImage() {
   let currentIndex = +currentImage.dataset.index;
   
   currentIndex = (currentIndex + 1) % imgs.length;
-  console.log(currentIndex);
+  // console.log(currentIndex);
   renderPicture(currentIndex);
   renderDots();
   setTimeout(nextImage, 5000);
