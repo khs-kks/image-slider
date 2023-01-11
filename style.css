@@ -1,0 +1,59 @@
+body {
+    background-color: cornsilk;
+}
+
+/* Define the animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+img {
+    border-radius: 20px;
+    animation: fadeIn 2s;
+}
+
+.picture-frame {
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+
+}
+
+.picture-frame>button {
+    place-self: center;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    font-size: 4rem;
+    color: gray;
+}
+
+.picture-frame>button:hover {
+    color: inherit;
+}
+
+.dots {
+    font-size: 5rem;
+    text-align: center;
+}
+
+.dot {
+    display: inline;
+    color: gray;
+}
+
+.dot.active {
+    color: inherit;
+}
+
+.dot:hover {
+    color: inherit;
+    cursor: pointer;
+}
